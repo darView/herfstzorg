@@ -7,7 +7,7 @@ const uglify      = require('gulp-uglify');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'assets/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
@@ -22,14 +22,14 @@ gulp.task('js', function() {
 
 // Move html Files to dist/js
 gulp.task('html', function() {
-    return gulp.src('assets/html/*.html')
+    return gulp.src('src/html/*.html')
         .pipe(gulp.dest("dist"))
         .pipe(browserSync.stream());
 });
 
 // Minify, uglify and concat my own javascripts
 gulp.task('uglify', function() {
-    return gulp.src('assets/js/*.js')
+    return gulp.src('src/js/*.js')
       .pipe(concat('scripts.js'))
       .pipe(rename('scripts.min.js'))
       .pipe(uglify())
@@ -42,9 +42,9 @@ gulp.task('serve', ['sass'], function() {
     browserSync.init({
         server: "./dist"
     });
-    gulp.watch(['assets/js/*.js'], ['uglify']).on('change', browserSync.reload);;
-    gulp.watch(['assets/html/*.html'], ['html']);
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'assets/scss/*.scss'], ['sass']);
+    gulp.watch(['src/js/*.js'], ['uglify']).on('change', browserSync.reload);;
+    gulp.watch(['src/html/*.html'], ['html']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
 
