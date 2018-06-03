@@ -1,3 +1,158 @@
+$icon-size:55px;
+$dark-overlay:rgba(0,0,0,0.4);
+$hz-background:#f1ecc1;
+$hz-link:#fc9407;
+$hz-active:#a51915;
+$hz-hover:#a51915;
+
 body {
-  background-color: lightgray;
+  background-color: white;
+}
+
+.fa {
+  font-size:$icon-size;
+}
+
+.dark-overlay{
+  position:absolute;
+  background-color:$dark-overlay;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#mainNavbar {
+  background: $hz-background;
+  /* change the link color */
+  .navbar-nav .nav-link {
+      color: $hz-link;
+  }
+  /* change the color of active or hovered links */
+  .nav-item.active .nav-link {
+      color: $hz-active;
+  }
+
+  .nav-item:hover .nav-link {
+      color: $hz-hover;
+  }
+  .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(252, 148, 7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+#showcase {
+
+  .carousel-item {
+    height: 450px;
+  }
+
+  img {
+    background-size: cover;
+  }
+
+  .carousel-caption {
+    background: rgba(0,0,0,0.35);
+  }
+}
+
+.navbar {
+
+  a {
+    white-space: nowrap;
+  }
+
+  button.navbar-toggler:focus {
+      outline: 1px solid #a51915;
+  }
+}
+
+#home-heading{
+  position:relative;
+  min-height:200px;
+  background:url('../img/image3.png');
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  // background-size: cover;
+  text-align:center;
+  color:#fff;
+}
+
+
+
+/* FOOTER */
+footer {
+  color: #888;
+  .volg-ons {
+    p {
+      white-space: nowrap;
+    }
+    border-bottom: 1px solid #dcdad8;
+    margin-bottom: 10px;
+  }
+
+  legend {
+    font-size: 13px;
+  }
+  background-color: $hz-background;
+  .fa{
+    font-size:20px;
+  }
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .social-links li {
+    float: left;
+    margin: 0;
+    margin-right: 3px;
+  }
+
+  .social-links li:last-child {
+    margin-right: 0px;
+  }
+
+  .social-links li a:link,
+  .social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: 0.2s;
+  }
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+    color: #00aced;
+}
+
+.fa-linkedin-square:hover {
+    color: #0077b5;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-google-plus-square,
+.fa-instagram {
+    transition: 0.2s;
+}
+
+.fa-chevron-circle-up {
+    margin-top: 35px;
+    color: rgb(14, 96, 27);
+    transition: 0.2s;
+}
+
+.fa-chevron-circle-up:hover {
+    color: rgba(14, 96, 27, 0.92);
+    transition: 0.2s;
 }
