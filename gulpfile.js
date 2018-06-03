@@ -27,6 +27,20 @@ gulp.task('html', function() {
         .pipe(browserSync.stream());
 });
 
+// Move favicon file to dist
+gulp.task('favicon', function() {
+    return gulp.src('src/html/*.ico')
+        .pipe(gulp.dest("dist"))
+        .pipe(browserSync.stream());
+});
+
+// Move image Files to dist/img
+gulp.task('img', function() {
+    return gulp.src('src/img/*.*')
+        .pipe(gulp.dest("dist/img"))
+        .pipe(browserSync.stream());
+});
+
 // Minify, uglify and concat my own javascripts
 gulp.task('uglify', function() {
     return gulp.src('src/js/*.js')
@@ -44,6 +58,8 @@ gulp.task('serve', ['sass'], function() {
     });
     gulp.watch(['src/js/*.js'], ['uglify']).on('change', browserSync.reload);;
     gulp.watch(['src/html/*.html'], ['html']);
+    gulp.watch(['src/html/*.ico'], ['favicon']);
+    gulp.watch(['src/img/*.*'], ['img']);
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
@@ -60,4 +76,4 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('dist/css'))
 })
 
-gulp.task('default', ['html', 'uglify', 'js','serve', 'fa', 'fonts']);
+gulp.task('default', ['favicon', 'img', 'html', 'uglify', 'js','serve', 'fa', 'fonts']);

@@ -1,12 +1,12 @@
 {
-  "name": "bs4starter",
+  "name": "HerfstZorg",
   "version": "1.0.0",
-  "description": "Bootstrap 4 starter workflow",
+  "description": "HerfstZorg website front end",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
   },
-  "author": "Brad Traversy",
+  "author": "darView",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.1",
