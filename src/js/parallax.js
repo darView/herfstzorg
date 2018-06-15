@@ -1,27 +1,28 @@
-$(function() {
+$(function ()
+{
 
-  // Cache the window object
-  var $window = $(window);
+    // Cache the window object
 
-  // Parallax background effect
-  $('section[data-type="background"]').each(function() {
+    var $window = $(window);
 
-      var $bgobj = $(this); // assigning the object
+    // Parallax background effect
+    $('section[data-type="background"]').each(function ()
+    {
 
-      $window.scroll(function() {
+        var $bgobj = $(this); // assigning the object
 
-          // Scroll the background at var speed
-          // the yPos is a negative value because we're scrolling it UP!
-          var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+        $window.scroll(function ()
+        {
 
-          // Put together our final background position.
-          var coords = '50%' + yPos + 'px';
+            // Scroll the background at var speed
+            // the yPos is a negative value because we're scrolling it UP!
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
 
-          // Move the background
-          $bgobj.css({backgroundPosition: coords})
-      }); // end window scroll
-  });
+            // Put together our final background position.
+            var coords = '50%' + yPos + 'px';
+
+            // Move the background
+            $bgobj.css({backgroundPosition: coords})
+        }); // end window scroll
+    });
 });
-
-//a.js
-console.log('Javascript B');
