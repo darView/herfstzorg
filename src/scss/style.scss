@@ -293,3 +293,47 @@ footer {
 .js-wp.animated {
   opacity: 1;
 }
+
+/** GOOGLE MAPS */
+#map {
+  height: 240px;
+  width: 100%;
+  margin-top: -8px;
+}
+
+/** CONTACT AREA */
+#contact {
+
+  .address {
+    i {
+      font-size: 18px;
+      color: $hz-link;
+      width:18px;
+      text-align: center;
+    }
+  }
+  .directions {
+    i {
+      font-size: 2rem;
+      color: $hz-link;
+      transition: 0.2s;
+    }
+    i:hover {
+      color: $hz-hover;
+      transition: 0.2s;
+    }
+    i:active {
+      color: $hz-active;
+    }
+
+    .card-header {
+      background-color: $hz-background;
+    }
+    button {
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+
+  font-size: 14px;
+}
