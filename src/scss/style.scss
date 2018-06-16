@@ -311,6 +311,15 @@ footer {
       width:18px;
       text-align: center;
     }
+    a {
+      color: $hz-link;
+      transition: 0.2s;
+      text-decoration: none;
+    }
+    a:hover {
+      transition: 0.2s;
+      color: $hz-hover;
+    }
   }
   .directions {
     i {
