@@ -1,10 +1,9 @@
 $(function ()
 {
     var i=0;
-    $('#terms_and_conditions .js-wp').each(function() {
+    $('#privacy-statement .js-wp').each(function() {
         i++;
-        var className='.js-wp-tc-' + i.toString();
-        console.log(className);
+        var className='.js-wp-ps-' + i.toString();
         $(className).waypoint(function (direction)
         {
             $(className).addClass('animated fadeInRight');
