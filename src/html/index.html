@@ -3,7 +3,9 @@
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700">-->
+    <!-- closest to Frutiger -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/eju4phm.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -72,11 +74,9 @@
 </section>
 
 <!-- NAVBAR SECTION -->
-
 <nav id="mainNavbar" class="navbar sticky-top navbar-expand-sm mb-2">
-
-    <a class="navbar-brand" href="#">
-        <img src="img/navbar_logo.png" alt="HerfstZorg"/>
+    <a class="navbar-brand" href="/index.html">
+        <img src="img/navbar_logo.png" alt="HerfstZorg | Mantelzorg Op Maat"/>
     </a>
     <button class="navbar-toggler"
             type="button"
@@ -89,17 +89,15 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto text-capitalize">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
+                <a class="nav-link" href="/index.html">Mantelzorg op maat<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/about.html">Over ons</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/services.html">Diensten</a>
+                <a class="nav-link" href="/pricing.html">Tarieven</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/vacancies.html">Vacatures</a>
@@ -109,12 +107,12 @@
             </li>
         </ul>
     </div>
-
 </nav>
 
 <!-- HOME ICON SECTION -->
 <section id="home-icons" class="py-5">
     <div class="container">
+        <h1 class="js-wp js-wp-title h1 mb-5 text-center">Mantelzorg op maat</h1>
         <div class="row">
             <div class="js-wp js-wp-home-2 col-md-4 text-center">
                 <i class="fa fa-home mb-2"></i>
@@ -162,10 +160,12 @@
                         <h4 class="card-title">Doktorsbezoek</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
                             labore!</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/1"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap"/>
+
                 </div>
 
                 <div class="card">
@@ -174,10 +174,11 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque
                             consectetur reiciendis nihil, quidem laborum incidunt vitae obcaecati aliquid quaerat,
                             quibusdam necessitatibus quo doloremque magnam.</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/2"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap" />
                 </div>
 
                 <div class="card">
@@ -188,10 +189,12 @@
                             perspiciatis fugit culpa alias, eius cumque aliquam excepturi delectus! Consectetur quia
                             molestiae laboriosam. Aliquam libero voluptatibus doloribus voluptatum aperiam at ipsam
                             iusto impedit assumenda molestias.</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
+
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/3"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap" />
                 </div>
 
                 <div class="card">
@@ -204,25 +207,27 @@
                             qui recusandae enim ex rem quos natus magni neque odio eum vel, fugiat eveniet repellat
                             reiciendis nisi libero non modi. Voluptatum iusto, enim consectetur, eum dolores quis omnis
                             obcaecati?</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/4"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap" />
                 </div>
 
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Dagindeling</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+                        <p id="test" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
                             repellendus. Nemo ad, quos ipsa provident culpa deserunt voluptate labore optio. Illo, harum
                             itaque natus, necessitatibus incidunt nisi tempore eum maxime. Quidem magnam ea blanditiis,
                             dolorum quam vero perferendis. Culpa delectus, porro illum, ipsa praesentium quae animi
                             consequuntur, molestias sapiente magnam ipsum fuga dignissimos laboriosam. Quia similique
                             quibusdam voluptatum nesciunt neque atque, distinctio sunt, officia nulla autem ratione!</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/5"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap" />
                 </div>
 
                 <div class="card">
@@ -230,10 +235,11 @@
                         <h4 class="card-title">Bijzondere momenten</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil
                             sint cum in, expedita qui animi, harum fugiat quod perferendis nesciunt magni similique?</p>
+                        <div class="read-more text-right"><a href="#"><i class="fa fa-arrow-right"></i>Lees verder</a></div>
                     </div>
                     <img class="card-img-top img-fluid"
-                         src="http://lorempixel.com/400/200/people/6"
-                         alt="Card image cap">
+                         src="/img/astrid.jpg"
+                         alt="Card image cap" />
                 </div>
             </div>
         </div>
@@ -263,7 +269,7 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="row testimonial">
                         <div class="col-sm-4">
-                            <img src="http://lorempixel.com/200/200/people/1">
+                            <img src="/img/astrid.jpg">
                         </div>
                         <div class="col-sm-8">
                             <blockquote>
@@ -279,7 +285,7 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="row testimonial">
                         <div class="col-sm-4">
-                            <img src="http://lorempixel.com/200/200/people/2">
+                            <img src="/img/astrid.jpg">
                         </div>
                         <div class="col-sm-8">
                             <blockquote>
@@ -295,7 +301,7 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="row testimonial">
                         <div class="col-sm-4">
-                            <img src="http://lorempixel.com/200/200/people/3">
+                            <img src="/img/astrid.jpg">
                         </div>
                         <div class="col-sm-8">
                             <blockquote>
@@ -328,16 +334,16 @@
                         <div class="clearfix">
                             <ul class="social-links float-left">
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Volg ons op Facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Volg ons op Twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Volg ons op LinkedIn"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Volg ons op Instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -354,15 +360,15 @@
                         <hr/>
                         <div class="row">
                             <div class="col col-sm-12 col-md-6">
-                                <ul class="information-links text-capitalize">
+                                <ul class="information-links">
                                     <li class="active">
-                                        <a href="/index.html">Home</a>
+                                        <a href="/index.html">Mantelzorg op maat</a>
                                     </li>
                                     <li>
                                         <a href="/about.html">Over ons</a>
                                     </li>
                                     <li>
-                                        <a href="/services.html">Diensten</a>
+                                        <a href="/pricing.html">Tarieven</a>
                                     </li>
                                     <li>
                                         <a href="/vacancies.html">Vacatures</a>
@@ -373,10 +379,7 @@
                                 </ul>
                             </div>
                             <div class="col col-sm-12 col-md-6">
-                                <ul class="information-links text-capitalize">
-                                    <li>
-                                        <a href="#">Tarieven</a>
-                                    </li>
+                                <ul class="information-links">
                                     <li>
                                         <a href="#">Nieuws</a>
                                     </li>
@@ -384,7 +387,7 @@
                                         <a href="#">Privacy en cookie statement</a>
                                     </li>
                                     <li>
-                                        <a href="#">Algemene voorwaarden</a>
+                                        <a href="/terms-and-conditions.html">Algemene voorwaarden</a>
                                     </li>
                                 </ul>
                             </div>
@@ -406,7 +409,7 @@
             <div class="col-sm-6 text-white">
                 <span class="copyright">Copyright &copy; 2018 HerfstZorg</span>
                 |
-                <span class="website"> Website door <a href="http://www.darview.com" target="_blank">darView</a></span>
+                <span class="website"> Website door <a href="http://www.darview.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Bezoek de website van darView (opent in een nieuw tabblad)">darView</a></span>
             </div>
             <div class="col-sm-6 text-white text-capitalize">
                 <span class="disclaimer"><a href="#">disclaimer</a></span>
