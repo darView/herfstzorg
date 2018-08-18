@@ -32,6 +32,10 @@ body {
   height: 100%;
 }
 
+.head {
+  font-weight: bold;
+}
+
 /** NAVIGATION BAR SECTION */
 #mainNavbar {
   background: $hz-background;
@@ -404,9 +408,6 @@ footer {
 
 
 #privacy-statement {
-  .head {
-    font-weight: bold;
-  }
   a {
     color: $hz-link;
     transition: 0.2s;
@@ -416,4 +417,8 @@ footer {
     transition: 0.2s;
     color: $hz-hover;
   }
+}
+
+#terms-and-conditions {
+
 }
