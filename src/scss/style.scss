@@ -385,7 +385,7 @@ footer {
 }
 
 #about {
-  .photo-astrid {
+  .image {
     width: 14rem;
     border-radius: 50%;
     transition: 0.5s;
@@ -421,4 +421,37 @@ footer {
 
 #terms-and-conditions {
 
+}
+
+
+#vacancies {
+  .image {
+    width: 14rem;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  footer {
+    background-color: white;
+  }
+
+  img:hover {
+    transition: 0.5s;
+    transform: scale(0.95);
+  }
+
+  i {
+    font-size: 1.8rem;
+    margin-right: 0.3rem;
+  }
+
+  a {
+    color: $hz-link;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  a:hover {
+    transition: 0.2s;
+    color: $hz-hover;
+  }
 }
