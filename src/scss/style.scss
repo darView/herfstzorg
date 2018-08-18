@@ -401,3 +401,19 @@ footer {
     margin-right: 0.3rem;
   }
 }
+
+
+#privacy-statement {
+  .head {
+    font-weight: bold;
+  }
+  a {
+    color: $hz-link;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  a:hover {
+    transition: 0.2s;
+    color: $hz-hover;
+  }
+}
