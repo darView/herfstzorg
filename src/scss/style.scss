@@ -35,7 +35,6 @@ body {
   font-weight: bold;
 }
 
-
 /** NAVIGATION BAR SECTION */
 #mainNavbar {
   background: $hz-background;
@@ -374,6 +373,10 @@ footer {
   font-size: 1.1rem;
 }
 
+#pricing {
+
+}
+
 #about {
   .image {
     width: 14rem;
@@ -413,6 +416,17 @@ footer {
 
 }
 
+#pricing {
+  a {
+    color: $hz-link;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  a:hover {
+    transition: 0.2s;
+    color: $hz-hover;
+  }
+}
 
 #vacancies {
   .image {
@@ -525,4 +539,8 @@ footer {
     text-align: center;
     color: #fff;
   }
+}
+
+#home-icons {
+  color: $hz-active;
 }
