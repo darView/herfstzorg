@@ -11,7 +11,6 @@ $breakpoint-large: 992px;
 $breakpoint-extra-large: 1200px;
 
 body {
-
   background-color: white;
   font-family: 'Istok Web', 'Merriweather', serif;
   //font-family: 'merriweather', 'Merriweather', serif;
@@ -35,6 +34,7 @@ body {
 .head {
   font-weight: bold;
 }
+
 
 /** NAVIGATION BAR SECTION */
 #mainNavbar {
@@ -85,16 +85,6 @@ body {
 }
 
 /* HOME SECTION */
-#home-heading {
-  position: relative;
-  min-height: 240px;
-  background: url('../img/image3.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  //background-size: cover;
-  text-align: center;
-  color: #fff;
-}
 
 /* TESTIMONIALS SECTION */
 #testimonials-heading {
@@ -453,5 +443,86 @@ footer {
   a:hover {
     transition: 0.2s;
     color: $hz-hover;
+  }
+}
+
+#heading {
+  position: relative;
+  min-height: 240px;
+  background: url('../img/image3.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  //background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+
+#doktersbezoek {
+  #heading {
+    position: relative;
+    min-height: 240px;
+    background: url('../img/doktersbezoek.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+#eropuit {
+  #heading {
+    position: relative;
+    background-position: top left;
+    min-height: 240px;
+    background: url('../img/eropuit.jpg');
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+#bijzondere-momenten {
+  #heading {
+    position: relative;
+    background-position: top left;
+    min-height: 240px;
+    background: url('../img/bijzondere-momenten.jpg');
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+#dagindeling {
+  #heading {
+    position: relative;
+    background-position: top left;
+    min-height: 240px;
+    background: url('../img/dagindeling.jpg');
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+#boodschappen-en-koken {
+  #heading {
+    position: relative;
+    background-position: top left;
+    min-height: 240px;
+    background: url('../img/boodschappen-en-koken.jpg');
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
   }
 }
