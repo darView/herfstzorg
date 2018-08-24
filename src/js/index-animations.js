@@ -4,7 +4,7 @@ $(function ()
     {
         $('.js-wp-home-1').addClass('animated fadeInDown');
     }, {
-        offset: '75%'
+        offset: '80%'
     });
 
     $('.js-wp-home-2').waypoint(function (direction)

@@ -71,7 +71,7 @@ body {
 #showcase {
 
   .carousel-item {
-    height: 400px;
+    //height: 480px;
   }
 
   img {
@@ -89,7 +89,7 @@ body {
 #testimonials-heading {
   position: relative;
   min-height: 240px;
-  background: url('../img/image2.jpg');
+  background: url('../img/testimonials.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -417,7 +417,13 @@ footer {
 }
 
 #pricing {
-  a {
+    .image {
+      width: 14rem;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+
+    a {
     color: $hz-link;
     transition: 0.2s;
     text-decoration: none;
@@ -463,10 +469,10 @@ footer {
 #heading {
   position: relative;
   min-height: 240px;
-  background: url('../img/image3.png');
+  background: url('../img/heading.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  //background-size: cover;
+  background-size: cover;
   text-align: center;
   color: #fff;
 }
