@@ -133,22 +133,6 @@ body {
   }
 }
 
-@media (min-width: $breakpoint-small) {
-  .card-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-
-@media (min-width: $breakpoint-medium) {
-  .card-columns {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-}
-
 /* TESTIMONIALS AREA */
 #testimonials {
   .testimonial {
@@ -549,4 +533,20 @@ footer {
 
 #home-icons {
   color: $hz-active;
+}
+
+@media (min-width: $breakpoint-small) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
 }
