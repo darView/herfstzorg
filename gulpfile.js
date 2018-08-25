@@ -49,7 +49,7 @@ gulp.task('img', function ()
 {
     return gulp.src('src/img/*.*')
         .pipe(imageResize({
-            samplingFactor : (2,2)
+            samplingFactor : (4,2)
         }))
         .pipe(gulp.dest("dist/img"))
         .pipe(browserSync.stream());
