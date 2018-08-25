@@ -4,6 +4,7 @@ const sass        = require('gulp-sass');
 const concat      = require('gulp-concat');
 const rename      = require('gulp-rename');
 const uglify      = require('gulp-uglify');
+const imageResize = require('gulp-image-resize');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function ()
@@ -19,8 +20,10 @@ gulp.task('js', function ()
 {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js',
         'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/jquery-parallax.js/parallax.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js',
-        'node_modules/waypoints/lib/jquery.waypoints.min.js'])
+        'node_modules/waypoints/lib/jquery.waypoints.min.js',
+        'node_modules/fg-loadcss/dist/loadCSS.min.js'])
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream());
 });
@@ -45,6 +48,9 @@ gulp.task('favicon', function ()
 gulp.task('img', function ()
 {
     return gulp.src('src/img/*.*')
+        .pipe(imageResize({
+            samplingFactor : (2,2)
+        }))
         .pipe(gulp.dest("dist/img"))
         .pipe(browserSync.stream());
 });

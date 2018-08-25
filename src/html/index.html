@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700">-->
-    <!-- closest to Frutiger -->
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/eju4phm.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/animate.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="HerfstZorg | particuliere mantelzorg">
+
+    <link rel="canonical" href="https://www.herfstzorg.nl/" />
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HerfstZorg | particuliere mantelzorg" />
+    <meta property="og:description" content="Particuliere mantelzorg. Wij zijn gespecialiseerd in de zorg voor ouderen. HerfstZorg ontzorgt en maakt dat u gewoon weer bij uw naaste op visite kunt gaan als dochter of zoon in plaats van als mantelzorger." />
+    <meta property="og:url" content="https://www.herfstzorg.nl/" />
+    <meta property="og:site_name" content="HerfstZorg | particulier mantelzorg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Particuliere mantelzorg. Wij zijn gespecialiseerd in de zorg voor ouderen. HerfstZorg ontzorgt en maakt dat u gewoon weer bij uw naaste op visite kunt gaan als dochter of zoon in plaats van als mantelzorger. Neem contact op voor meer info." />
+    <meta name="twitter:title" content="HerfstZorg | particuliere mantelzorg" />
+    <meta name="twitter:site" content="@HerfstZorg" />
+    <meta name="twitter:creator" content="@HerfstZorg" />
+
+    <!--<noscript>-->
+        <!--&lt;!&ndash; closest to Frutiger &ndash;&gt;-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">-->
+        <!--<link rel="stylesheet" href="https://use.typekit.net/eju4phm.css">-->
+        <!--<link rel="stylesheet" href="/css/font-awesome.min.css">-->
+        <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
+        <!--<link rel="stylesheet" href="/css/style.css">-->
+        <!--<link rel="stylesheet" href="/css/animate.css">-->
+    <!--</noscript>-->
+
     <link rel="icon" href="favicon.ico">
     <title>HerfstZorg | particuliere mantelzorg</title>
 </head>
@@ -135,20 +155,20 @@
         </section>
     </div>
 
-    <!-- HOME HEADING SECTION -->
-    <section id="heading" class="pb-5" data-type="background" data-speed="3">
-        <div class="dark-overlay">
-            <div class="row">
-                <div class="col">
-                    <div class="container py-sm-5 py-4">
-                        <h1 class="js-wp js-wp-home-1">Wij zijn gespecialiseerd in de zorg voor ouderen.</h1>
-                        <p class="js-wp js-wp-home-1 d-none d-sm-block pb-5">HerfstZorg ontzorgt en maakt dat u gewoon weer bij
-                            uw naaste op visite kunt gaan als dochter of zoon in plaats van als mantelzorger.</p>
-                    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/img/heading.jpg" data-ios-fix="true" data-android-fix="true">
+        <div class="row">
+            <div class="col">
+                <div class="container py-sm-5 py-4">
+                    <h1 class="js-wp js-wp-home-1">Wij zijn gespecialiseerd in de zorg voor ouderen.</h1>
+                    <p class="js-wp js-wp-home-1 d-none d-sm-block pb-5">
+                        HerfstZorg ontzorgt en maakt dat u gewoon weer bij uw naaste op visite kunt gaan als dochter
+                        of zoon in plaats van als mantelzorger.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
 
     <!-- CARD COLUMNS -->
     <section id="cards-section">
@@ -231,16 +251,16 @@
 
 
     <!-- TESTIMONIALS HEADING SECTION -->
-    <section id="testimonials-heading" class="pb-5">
-        <div class="dark-overlay">
-            <div class="row">
-                <div class="col py-5">
-                    <h1 class="js-wp js-wp-home-5">Reviews</h1>
-                    <p class="js-wp js-wp-home-5 pb-5">Ervaringen van klanten</p>
-                </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/img/testimonials.jpg" data-ios-fix="true" data-android-fix="true">
+        <div class="row">
+            <div class="col py-5">
+                <h1 class="js-wp js-wp-home-5">Reviews</h1>
+                <p class="js-wp js-wp-home-5 pb-5">Ervaringen van klanten</p>
             </div>
         </div>
-    </section>
+    </div>
+
+
 
     <!-- TESTIMONIALS -->
     <section id="testimonials">
@@ -400,12 +420,28 @@
     </div>
 </section>
 
-<!-- SCRIPTS -->
 <script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/scripts.min.js"></script>
+<script src="js/loadCSS.min.js"></script>
+
+<script async src="js/parallax.min.js"></script>
+<script async src="js/popper.min.js"></script>
+<script async src="js/bootstrap.min.js"></script>
+<script async src="js/jquery.waypoints.min.js"></script>
+<script async src="js/scripts.min.js"></script>
+
+<script>
+    $(function ()
+    {
+        loadCSS("https://fonts.googleapis.com/css?family=Istok+Web")
+        loadCSS("/css/style.css");
+        loadCSS("/css/font-awesome.min.css");
+        loadCSS("/css/bootstrap.css");
+        loadCSS("/css/style.css");
+        loadCSS("/css/animate.css");
+
+        $('parallax-window').parallax();
+    });
+</script>
 
 </body>
 </html>
