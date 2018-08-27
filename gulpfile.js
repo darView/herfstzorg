@@ -11,7 +11,7 @@ gulp.task('sass', function ()
 {
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("dist/assets/css"))
         .pipe(browserSync.stream());
 });
 
@@ -24,7 +24,7 @@ gulp.task('js', function ()
         'node_modules/popper.js/dist/umd/popper.min.js',
         'node_modules/waypoints/lib/jquery.waypoints.min.js',
         'node_modules/fg-loadcss/dist/loadCSS.min.js'])
-        .pipe(gulp.dest("dist/js"))
+        .pipe(gulp.dest("dist/assets/js"))
         .pipe(browserSync.stream());
 });
 
@@ -51,7 +51,7 @@ gulp.task('img', function ()
         .pipe(imageResize({
             samplingFactor : (4,2)
         }))
-        .pipe(gulp.dest("dist/img"))
+        .pipe(gulp.dest("dist/assets/img"))
         .pipe(browserSync.stream());
 });
 
@@ -62,7 +62,7 @@ gulp.task('uglify', function ()
         .pipe(concat('scripts.js'))
         .pipe(rename('scripts.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('dist/assets/js'))
 });
 
 // Watch Sass & Serve
@@ -84,21 +84,21 @@ gulp.task('serve', ['sass'], function ()
 gulp.task('fonts', function ()
 {
     return gulp.src('node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/assets/fonts'))
 })
 
 // Move Font Awesome CSS to dist/css
 gulp.task('fa', function ()
 {
     return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/assets/css'))
 })
 
 // Move Font Awesome CSS to dist/css
 gulp.task('animate', function ()
 {
     return gulp.src('src/css/animate.css')
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/assets/css'))
 })
 
 gulp.task('default', ['favicon', 'img', 'html', 'uglify', 'js', 'serve', 'fa', 'fonts', 'animate']);
