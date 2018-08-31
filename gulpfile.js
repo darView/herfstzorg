@@ -51,6 +51,11 @@ gulp.task('img', function ()
         .pipe(imageResize({
             samplingFactor : (4,2)
         }))
+        .pipe(imageResize({
+            optimizationLevel: 7,
+            progressive: true,
+            interlaced: true
+        }))
         .pipe(gulp.dest("dist/assets/img"))
         .pipe(browserSync.stream());
 });
