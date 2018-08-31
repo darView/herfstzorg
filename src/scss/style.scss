@@ -403,8 +403,13 @@ footer {
     text-decoration: none;
   }
   a:hover {
-    transition: 0.2s;
-    color: $hz-hover;
+    transition: 0.5s;
+    transform: scale(0.95);
+  }
+
+  img:hover {
+    transition: 0.5s;
+    transform: scale(0.95);
   }
 }
 
