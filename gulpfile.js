@@ -9,7 +9,7 @@ const imageResize = require('gulp-image-resize');
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function ()
 {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/slick-carousel/slick/slick.scss', 'src/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("dist/assets/css"))
         .pipe(browserSync.stream());
@@ -22,6 +22,7 @@ gulp.task('js', function ()
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/jquery-parallax.js/parallax.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
         'node_modules/waypoints/lib/jquery.waypoints.min.js',
         'node_modules/fg-loadcss/dist/loadCSS.min.js'])
         .pipe(gulp.dest("dist/assets/js"))

@@ -456,6 +456,17 @@ footer {
   color: #fff;
 }
 
+/**
+ * RPI progress bar
+ */
+[data-rpi-area] {
+  background: rgba(165, 25, 21, .1);
+}
+.rpi-progress-bar__position {
+  max-height: 1px;
+  overflow: hidden;
+}
+
 @media (min-width: $breakpoint-small) {
   .card-columns {
     -webkit-column-count: 2;
